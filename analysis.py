@@ -1,5 +1,5 @@
 file = open('pushkin.txt', 'r')
-f = file.read().replace("\n"," ").replace("\t","").replace("\xa0\xa0\xa0\xa0","").split(" ")
+f = file.read().replace("\n"," ").replace("\t","").replace("\xa0\xa0\xa0\xa0","").replace(",","").replace(".","").split(" ")
 dict = {}
 for word in f:
     if dict.get(word) != None:
